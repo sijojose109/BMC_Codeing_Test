@@ -33,3 +33,5 @@
 	    "referer":"facebook"
 	}
 
+* An archival mechanism implemented to push 6 month elder data to new table 'analytics_archived' and delete from 'analytics' table, which is developed as an aritisan command and this command excuted as a cron job in every week(every monday at 00:05 AM). This archival table not considered in above APIs now above endpoints only fetching data from 'analytics' table only.
+
