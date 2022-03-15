@@ -33,5 +33,7 @@
 	    "referer":"facebook"
 	}
 
+Note: The archival mechanism is just implemented and the archived data table is not considered for data pull in the developed APIs.
+
 * An archival mechanism implemented to push 6 month elder data to new table 'analytics_archived' and delete from 'analytics' table, which is developed as an artisan command and this command will be executed as a cron job every week(every monday at 00:05 AM). This archival table not considered in above APIs now above endpoints only fetching data from 'analytics' table only.
 
