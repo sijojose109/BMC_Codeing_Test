@@ -10,7 +10,7 @@
 
   composer install
 
-* run below command to run migration and crete tables in the DB
+* run below command to run migration and create tables in the DB
 
   php artisan migrate
 
@@ -18,7 +18,7 @@
 
 * run php artisan serve
 
-* 2 separate endpoints are developed to fetch day wise and monthly analytics report.
+* 2 separate endpoints are developed to fetch day wise and monthly analytics reports.
     
     http://127.0.0.1:8000/api/analytics/report_daily
 
@@ -33,5 +33,5 @@
 	    "referer":"facebook"
 	}
 
-* An archival mechanism implemented to push 6 month elder data to new table 'analytics_archived' and delete from 'analytics' table, which is developed as an aritisan command and this command excuted as a cron job in every week(every monday at 00:05 AM). This archival table not considered in above APIs now above endpoints only fetching data from 'analytics' table only.
+* An archival mechanism implemented to push 6 month elder data to new table 'analytics_archived' and delete from 'analytics' table, which is developed as an artisan command and this command will be executed as a cron job every week(every monday at 00:05 AM). This archival table not considered in above APIs now above endpoints only fetching data from 'analytics' table only.
 
